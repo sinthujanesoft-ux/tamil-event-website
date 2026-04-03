@@ -8,50 +8,26 @@ body {
 
 /* HERO */
 .hero {
-    padding: 100px 20px;
+    padding: 80px;
     background: linear-gradient(orange, red);
-}
-
-.hero h1 {
-    font-size: 40px;
-    color: yellow;
-}
-
-.hero p {
-    font-size: 20px;
-}
-
-/* BUTTONS */
-.btn {
-    background: gold;
-    color: black;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.btn.secondary {
-    background: white;
 }
 
 /* INFO */
 .info {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 20px;
 }
 
 .box {
     background: #a52a2a;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
 }
 
 /* COMPETITIONS */
 .competitions {
-    padding: 50px 20px;
+    padding: 40px;
 }
 
 .cards {
@@ -67,22 +43,21 @@ body {
     width: 250px;
 }
 
-.card button {
+button {
     background: gold;
     border: none;
     padding: 10px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-/* ANNOUNCEMENTS */
-.announcements {
-    background: #ffcc00;
+/* DETAILS */
+.details {
+    background: white;
     color: black;
     padding: 30px;
 }
 
-/* FOOTER */
-footer {
-    padding: 20px;
-    background: black;
+.detail-box {
+    display: none;
 }
