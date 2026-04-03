@@ -12,9 +12,12 @@ body {
 /* HERO SECTION */
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* center align */
     align-items: center;
-    padding: 60px 40px;
+    gap: 60px; /* space between text & image */
+    padding: 80px 20px;
+    background: linear-gradient(to right, #3b1d0a, #a0522d);
+}
 
     /* Image-ku match aana color */
     background: linear-gradient(to right, #3b1d0a, #a0522d);
@@ -22,22 +25,24 @@ body {
 
 /* TEXT */
 .hero-text {
-    max-width: 60%;
+    max-width: 500px;
 }
 
 .hero-text h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 1.3;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 /* IMAGE RIGHT SIDE */
 .hero-img {
-    width: 250px;
-    border-radius: 15px;
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 /* COMPETITIONS */
@@ -85,6 +90,7 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 
     .hero-text {
