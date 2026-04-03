@@ -12,12 +12,6 @@ body {
     background: linear-gradient(orange, red);
 }
 
-/* INFO */
-.info {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
 
 .box {
     background: #a52a2a;
