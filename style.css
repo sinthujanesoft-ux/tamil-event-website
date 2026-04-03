@@ -57,6 +57,33 @@ body {
     border-radius: 10px;
 }
 
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
 /* FOOTER */
 footer {
     padding: 20px;
