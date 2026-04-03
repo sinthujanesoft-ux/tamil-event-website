@@ -1,12 +1,74 @@
-.center-box h3 {
-    margin-top: 25px;
-    color: gold;
+/* BACKGROUND SECTION */
+.section {
+    padding: 60px 20px;
 }
 
+/* WHITE CARD 🔥 */
+.center-box {
+    max-width: 750px;
+    margin: auto;
+    background: #ffffff;
+    color: #222;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+/* TITLE */
+.center-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* SUB TITLES */
+.center-box h3 {
+    margin-top: 25px;
+    color: #8b0000;
+}
+
+/* TEXT */
 .center-box p {
     margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* LIST */
+.rules {
+    padding-left: 20px;
 }
 
 .rules li {
-    margin: 6px 0;
+    margin: 8px 0;
+}
+
+/* BUTTON */
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    background: gold;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #222;
+    color: white;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    .center-box {
+        padding: 25px 15px;
+    }
+
+    .center-box h1 {
+        font-size: 22px;
+    }
 }
