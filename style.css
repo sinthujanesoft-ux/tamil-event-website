@@ -25,10 +25,13 @@ body {
     align-items: center;
 }
 
+/* LOGO */
 .logo {
     color: gold;
+    font-size: 20px;
 }
 
+/* NAV */
 .nav {
     list-style: none;
     display: flex;
@@ -52,7 +55,7 @@ body {
     padding: 60px 20px;
 }
 
-/* CARDS BUTTON STYLE 🔥 */
+/* CARDS */
 .cards {
     display: flex;
     justify-content: center;
@@ -60,7 +63,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* 🔥 MAIN FIX BUTTON */
+/* BUTTON CARDS */
 .card-btn {
     display: inline-block;
     background: #5a1a00;
@@ -70,6 +73,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     min-width: 220px;
+    text-align: center;
     transition: 0.3s;
 }
 
@@ -86,10 +90,30 @@ footer {
     padding: 15px;
 }
 
-/* MOBILE */
-@media(max-width:768px){
+/* 🔥 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .nav {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .card-btn {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 40px 15px;
     }
 }
