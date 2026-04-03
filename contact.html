@@ -2,32 +2,76 @@
 <html lang="ta">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contact</title>
-<link rel="stylesheet" href="./style.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contact.css">
+
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
-    <div class="container">
-        <h2 class="logo">தமிழ் மாநாடு 2026</h2>
+  <div class="container">
 
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
+    <h2 class="logo">தமிழ் மாநாடு 2026</h2>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav" id="navMenu">
+      <li><a href="index.html">முகப்பு</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+  </div>
 </nav>
 
-<section class="section">
-    <h1>தொடர்பு கொள்ள</h1>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
 
-    <p>📍 மட்டக்களப்பு</p>
-    <p>📞 07XXXXXXXX</p>
-    <p>📧 example@gmail.com</p>
+<div class="contact-box">
+
+<h1>📞 எங்களை தொடர்பு கொள்ள</h1>
+
+<div class="contact-grid">
+
+<!-- LEFT INFO -->
+<div class="contact-info">
+
+<p>📍 இடம்: மட்டக்களப்பு</p>
+<p>📧 Email: info@tamilconference.com</p>
+<p>📱 Phone: +94 77 123 4567</p>
+
+</div>
+
+<!-- RIGHT FORM -->
+<form class="contact-form">
+
+<input type="text" placeholder="உங்கள் பெயர்" required>
+<input type="email" placeholder="Email முகவரி" required>
+<textarea placeholder="உங்கள் செய்தி" rows="5" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
 </section>
+
+<!-- JS -->
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
