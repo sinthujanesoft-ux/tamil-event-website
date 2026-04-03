@@ -17,9 +17,10 @@ body {
 }
 
 .hero-flex {
-    display: flex;
-    justify-content: space-between;
+ display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .hero-text h1 {
