@@ -1,0 +1,105 @@
+/* SECTION BACKGROUND */
+.section {
+    padding: 80px 20px;
+}
+
+/* CENTER CARD */
+.center-box {
+    max-width: 700px;
+    margin: auto;
+    background: #e5e5e5;
+    color: #222;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* MAIN TITLE */
+.center-box h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+.center-box p strong {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* HEADINGS */
+.center-box h3 {
+    color: #8b0000;
+    margin-top: 20px;
+}
+
+/* TEXT */
+.center-box p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* RULES LIST */
+.rules {
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.rules li {
+    margin: 8px 0;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* BUTTON */
+.square-btn {
+    display: inline-block;
+    padding: 18px 25px;
+    width: 200px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    background: #8b0000;
+}
+
+/* REGISTER BUTTON */
+.register {
+    background: black;
+}
+
+/* HOVER EFFECT */
+.square-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .center-box {
+        padding: 25px 15px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .square-btn {
+        width: 100%;
+    }
+
+    .center-box h1 {
+        font-size: 22px;
+    }
+}
