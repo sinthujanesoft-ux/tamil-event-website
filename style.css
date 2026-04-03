@@ -10,6 +10,31 @@ body {
     color: white;
 }
 
+/* HERO */
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #3b1d0a, #a0522d);
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 32px;
+}
+
+.hero-text p {
+    margin-top: 10px;
+}
+
+.hero img {
+    width: 220px;
+    border-radius: 20px;
+}
+
 /* NAVBAR */
 .navbar {
     background: black;
@@ -121,6 +146,19 @@ footer {
 /* MOBILE FIX 🔥 */
 @media (max-width: 768px) {
 
+    .hero-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 20px;
+        width: 160px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
     .menu-toggle {
         display: block;
         font-size: 26px;
