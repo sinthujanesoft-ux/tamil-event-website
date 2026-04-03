@@ -1,0 +1,107 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Noto Sans Tamil', sans-serif;
+    background: linear-gradient(to bottom, #2c0d00, #8b0000);
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    background: black;
+    padding: 15px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    color: gold;
+}
+
+/* NAV */
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MENU ICON */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    padding: 80px 20px;
+}
+
+/* CARD */
+.about-box {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
+.about-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+.about-box p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+}
