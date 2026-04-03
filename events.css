@@ -1,32 +1,31 @@
 /* SECTION */
 .events-section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
-}
-
-/* NAV ACTIVE PAGE */
-.nav a.active {
-    color: gold;
 }
 
 /* TITLE */
 .events-section h1 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    .events-section h1 {text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
 }
 
 /* GRID */
 .event-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    gap: 30px;
 }
 
 /* CARD */
 .event-card {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 /* IMAGE */
@@ -37,66 +36,25 @@
     transition: 0.4s;
 }
 
-/* OVERLAY */
+/* 🔥 OVERLAY (GRADIENT) */
 .overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 15px;
-    background: rgba(0,0,0,0.6);
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: white;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
-/* HOVER EFFECT 🔥 */
+/* 🔥 HOVER EFFECT */
 .event-card:hover img {
     transform: scale(1.1);
 }
 
-/* NAVBAR */
-.navbar {
-    background: black;
-    padding: 15px 20px;
-}
-
-/* CONTAINER */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* NAV LINKS */
-.nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* ACTIVE */
-.nav a.active {
-    color: gold;
-}
-
-/* 📱 MOBILE FIX 🔥 */
-@media (max-width: 768px) {
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav {
-        display: flex;   /* ❗ IMPORTANT */
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
