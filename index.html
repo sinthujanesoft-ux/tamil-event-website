@@ -15,14 +15,19 @@
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="container">
+
     <h2 class="logo">தமிழ் மாநாடு 2026</h2>
 
-    <ul class="nav">
+    <!-- ☰ MENU -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav" id="navMenu">
       <li><a href="index.html">முகப்பு</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
   </div>
 </nav>
 
@@ -34,13 +39,20 @@
     <a href="katturai.html" class="card-btn">✍️ கட்டுரை போட்டி</a>
     <a href="peechu.html" class="card-btn">🎤 பேச்சுப் போட்டி</a>
     <a href="shortfilm.html" class="card-btn">🎬 குறும்பட போட்டி</a>
-    <a href="book.html" class="card-btn">📖 நூல் வெளியீடு</a>
+    <a href="book.html" class="card-btn highlight">📖 நூல் வெளியீடு</a>
   </div>
 </section>
 
 <footer>
   <p>உங்கள் கலை, உங்கள் வெற்றி!</p>
 </footer>
+
+<!-- JS -->
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
