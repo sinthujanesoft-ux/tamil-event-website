@@ -118,11 +118,6 @@ body {
     transform: scale(1.05);
 }
 
-/* HIGHLIGHT BUTTON */
-.highlight {
-    background: gold;
-    color: black;
-}
 
 /* FOOTER */
 footer {
