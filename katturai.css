@@ -1,3 +1,4 @@
+/* SECTION */
 .section {
     padding: 60px 20px;
 }
@@ -8,8 +9,9 @@
     margin: auto;
     background: #ffffff;
     color: #222;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     text-align: center;
 }
 
@@ -18,26 +20,65 @@
     margin-bottom: 15px;
 }
 
+/* SUBTITLE */
+.center-box h3 {
+    margin-top: 15px;
+    color: #8b0000;
+}
+
+/* TEXT */
+.center-box p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
 /* BUTTON */
 .square-btn {
     display: inline-block;
-    margin-top: 20px;
     background: #8b0000;
     color: white;
-    padding: 15px 25px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
+/* HOVER */
 .square-btn:hover {
     background: gold;
     color: black;
+    transform: scale(1.05);
+}
+
+/* REGISTER SPECIAL */
+.register {
+    background: black;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
+
     .center-box {
-        padding: 20px;
+        padding: 25px 15px;
+    }
+
+    .square-btn {
+        width: 90%;
+    }
+
+    .center-box h1 {
+        font-size: 22px;
     }
 }
