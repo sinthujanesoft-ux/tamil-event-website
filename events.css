@@ -1,0 +1,50 @@
+/* SECTION */
+.events-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* TITLE */
+.events-section h1 {
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.event-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+/* IMAGE */
+.event-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* HOVER EFFECT 🔥 */
+.event-card:hover img {
+    transform: scale(1.1);
+}
