@@ -72,10 +72,10 @@ body {
 }
 
 .card {
-    background: #5a1a00;
-    padding: 20px;
-    border-radius: 10px;
-    width: 220px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* BUTTON */
