@@ -63,3 +63,42 @@
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    .nav li {
+        list-style: none;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    /* ACTIVE MENU */
+    .nav.active {
+        right: 0;
+    }
+}
