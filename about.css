@@ -18,10 +18,12 @@ body {
     padding: 15px 20px;
 }
 
+/* CONTAINER */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 /* LOGO */
@@ -39,6 +41,11 @@ body {
 .nav a {
     color: white;
     text-decoration: none;
+}
+
+/* ACTIVE */
+.nav a.active {
+    color: gold;
 }
 
 /* MENU ICON */
@@ -87,18 +94,21 @@ body {
     .nav {
         display: none;
         flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 15px 0;
+    }
+
+    .nav li {
         text-align: center;
+        padding: 10px 0;
     }
 
     .nav.active {
         display: flex;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .about-box {
