@@ -2,26 +2,23 @@
 <html lang="ta">
 <head>
 <meta charset="UTF-8">
-<title>தமிழ் இளைஞர் திறன் விழா</title>
+<title>தமிழ் இளைஞர் திறன் விழா 2026</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO -->
 <header class="hero">
     <h1>தமிழ் இளைஞர் திறன் விழா 2026</h1>
     <p>உங்கள் திறமையை உலகுக்கு காட்டுங்கள்!</p>
 </header>
 
-<!-- EVENT INFO -->
 <section class="info">
     <div class="box">📍 Colombo / Online</div>
     <div class="box">📅 15–20 June 2026</div>
     <div class="box">🎯 இளைஞர் திறன் வளர்ச்சி</div>
 </section>
 
-<!-- COMPETITIONS -->
 <section class="competitions">
     <h2>பிரபல போட்டிகள்</h2>
 
@@ -30,75 +27,27 @@
         <div class="card">
             <h3>✍️ கட்டுரை போட்டி</h3>
             <p>தமிழின் எதிர்காலம்</p>
-            <button onclick="showSection('katturai')">பங்கேற்கவும்</button>
+            <a href="katturai.html" class="btn">பங்கேற்கவும்</a>
         </div>
 
         <div class="card">
             <h3>🎤 பேச்சுப் போட்டி</h3>
             <p>இளைஞர்களின் பங்கு</p>
-            <button onclick="showSection('peechu')">பங்கேற்கவும்</button>
+            <a href="peechu.html" class="btn">பங்கேற்கவும்</a>
         </div>
 
         <div class="card">
             <h3>🎬 குறும்பட போட்டி</h3>
             <p>சமூக பிரச்சினைகள்</p>
-            <button onclick="showSection('shortfilm')">பங்கேற்கவும்</button>
+            <a href="shortfilm.html" class="btn">பங்கேற்கவும்</a>
         </div>
 
     </div>
 </section>
 
-<!-- DETAILS SECTION -->
-<section id="details" class="details" style="display:none;">
-
-    <!-- கட்டுரை -->
-    <div id="katturai" class="detail-box">
-        <h2>✍️ கட்டுரை போட்டி விதிமுறைகள்</h2>
-        <ul>
-            <li>தலைப்பு: தமிழின் எதிர்காலம்</li>
-            <li>500–1000 வார்த்தைகள்</li>
-            <li>PDF format</li>
-            <li>Deadline: June 10</li>
-        </ul>
-    </div>
-
-    <!-- பேச்சு -->
-    <div id="peechu" class="detail-box">
-        <h2>🎤 பேச்சுப் போட்டி விதிமுறைகள்</h2>
-        <ul>
-            <li>தலைப்பு: இளைஞர்களின் பங்கு</li>
-            <li>5 நிமிடம் பேச வேண்டும்</li>
-            <li>Video upload</li>
-        </ul>
-    </div>
-
-    <!-- குறும்படம் -->
-    <div id="shortfilm" class="detail-box">
-        <h2>🎬 குறும்பட போட்டி விதிமுறைகள்</h2>
-        <ul>
-            <li>Duration: 5–10 minutes</li>
-            <li>Theme: சமூக பிரச்சினைகள்</li>
-            <li>MP4 format</li>
-        </ul>
-    </div>
-
-</section>
-
-<!-- SCRIPT -->
-<script>
-function showSection(type) {
-    document.getElementById("details").style.display = "block";
-
-    let sections = ["katturai", "peechu", "shortfilm"];
-    sections.forEach(id => {
-        document.getElementById(id).style.display = "none";
-    });
-
-    document.getElementById(type).style.display = "block";
-
-    document.getElementById("details").scrollIntoView({ behavior: "smooth" });
-}
-</script>
+<footer>
+    <p>உங்கள் கலை, உங்கள் வெற்றி!</p>
+</footer>
 
 </body>
 </html>
