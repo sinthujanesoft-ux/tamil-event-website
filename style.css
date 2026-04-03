@@ -12,15 +12,11 @@ body {
 /* HERO SECTION */
 .hero {
     display: flex;
-    justify-content: center; /* center align */
+    justify-content: center;
     align-items: center;
-    gap: 60px; /* space between text & image */
+    gap: 60px;
+    background: linear-gradient(to right, #3b1d0a, #a0522d);
     padding: 80px 20px;
-    background: linear-gradient(to right, #3b1d0a, #a0522d);
-}
-
-    /* Image-ku match aana color */
-    background: linear-gradient(to right, #3b1d0a, #a0522d);
 }
 
 /* TEXT */
@@ -38,7 +34,7 @@ body {
     margin-top: 10px;
 }
 
-/* IMAGE RIGHT SIDE */
+/* IMAGE */
 .hero-img {
     width: 220px;
     border-radius: 20px;
@@ -84,7 +80,7 @@ footer {
     text-align: center;
 }
 
-/* 📱 MOBILE RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
 
     .hero {
@@ -101,5 +97,4 @@ footer {
         width: 150px;
         margin-top: 20px;
     }
-
 }
