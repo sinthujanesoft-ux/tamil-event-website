@@ -28,6 +28,7 @@ body {
 /* TEXT */
 .hero-text {
     flex: 1;
+    text-align: left;
 }
 
 .hero-text h1 {
@@ -44,7 +45,7 @@ body {
 .hero-img {
     width: 260px;
     border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin-left: auto; /* pushes to right */
 }
 
 /* COMPETITIONS */
@@ -99,17 +100,15 @@ footer {
         text-align: center;
     }
 
-    .hero-text h1 {
-        font-size: 26px;
-    }
-
-    .hero-text p {
-        font-size: 14px;
+    .hero-text {
+        text-align: center;
     }
 
     .hero-img {
         width: 160px;
         margin-top: 20px;
+        margin-left: 0;
     }
+}
 
 }
