@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow-x: hidden;
     font-family: 'Noto Sans Tamil', sans-serif;
     background: linear-gradient(to right, #1a0000, #660000);
     color: white;
@@ -30,13 +31,12 @@ body {
     gap: 20px;
 }
 
-.card {
-    background: #b22222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* important */
 }
-
 /* BUTTON */
 .btn {
     display: inline-block;
@@ -59,12 +59,11 @@ body {
 }
 
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     .info {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
     .cards {
@@ -76,15 +75,24 @@ body {
         width: 90%;
     }
 
+    .hero {
+        padding: 40px 20px;
+    }
+
     .hero h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }
+
+{
+    box-sizing: border-box;
+}
+
 /* FOOTER */
 footer {
     padding: 20px;
