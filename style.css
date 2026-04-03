@@ -49,6 +49,14 @@ body {
     color: gold;
 }
 
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
 /* SECTION */
 .section {
     text-align: center;
@@ -83,6 +91,12 @@ body {
     transform: scale(1.05);
 }
 
+/* HIGHLIGHT BUTTON */
+.highlight {
+    background: gold;
+    color: black;
+}
+
 /* FOOTER */
 footer {
     background: black;
@@ -90,30 +104,31 @@ footer {
     padding: 15px;
 }
 
-/* 🔥 MOBILE RESPONSIVE */
+/* 🔥 MOBILE */
 @media (max-width: 768px) {
 
-    .container {
-        flex-direction: column;
-        gap: 10px;
+    .menu-toggle {
+        display: block;
     }
 
     .nav {
+        display: none;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        background: black;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    .logo {
-        font-size: 18px;
+    .nav.active {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: row;
     }
 
     .card-btn {
         width: 90%;
-        font-size: 16px;
-    }
-
-    .section {
-        padding: 40px 15px;
     }
 }
