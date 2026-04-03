@@ -104,15 +104,31 @@ footer {
     padding: 15px;
 }
 
-/* 🔥 MOBILE */
+/* DESKTOP */
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+}
+
+/* MOBILE FIX 🔥 */
 @media (max-width: 768px) {
 
     .menu-toggle {
         display: block;
+        font-size: 26px;
+        cursor: pointer;
     }
 
     .nav {
-        display: none;
+        display: none;   /* 🔥 முக்கியம் */
         flex-direction: column;
         background: black;
         width: 100%;
@@ -121,14 +137,8 @@ footer {
     }
 
     .nav.active {
-        display: flex;
+        display: flex;   /* 🔥 click ஆனா மட்டும் show */
     }
-
-    .container {
-        flex-direction: row;
-    }
-
-    .card-btn {
-        width: 90%;
-    }
+}
+    
 }
