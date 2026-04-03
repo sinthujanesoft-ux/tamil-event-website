@@ -31,7 +31,8 @@ body {
 }
 
 .hero img {
-    width: 220px;
+    width: 180px;
+  max-width: 100%;
     border-radius: 20px;
 }
 
@@ -153,7 +154,7 @@ footer {
 
     .hero img {
         margin-top: 20px;
-        width: 160px;
+        width: 140px;
     }
 
     .hero-text h1 {
