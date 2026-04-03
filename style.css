@@ -117,7 +117,42 @@ body {
     color: black;
     transform: scale(1.05);
 }
+/* ABOUT SECTION */
+.about-section {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #8b0000, #5a0000);
+}
 
+/* BOX */
+.about-box {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+/* TITLE */
+.about-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+.about-box p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .about-box {
+        padding: 20px;
+    }
+}
 
 /* FOOTER */
 footer {
