@@ -63,6 +63,16 @@ body {
     padding: 50px 20px;
 }
 
+.section ul {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+}
+
+.section li {
+    margin: 8px 0;
+}
+
 /* CARDS */
 .cards {
     display: flex;
@@ -72,28 +82,29 @@ body {
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    background: #5a1a00;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
 }
 
 /* BUTTON */
 .btn {
     display: inline-block;
     background: #5a1a00;
-    color: white;
+    color: white !important;   /* 🔥 இது important */
     padding: 15px 25px;
     border-radius: 15px;
-    text-decoration: none;
+    text-decoration: none !important;  /* 🔥 underline remove */
     font-weight: bold;
+    margin-top: 15px;
     transition: 0.3s;
 }
-/* HOVER 🔥 */
+
 .btn:hover {
     background: gold;
-    color: black;
-    transform: scale(1.05);
+    color: black !important;
 }
 
 /* FOOTER */
