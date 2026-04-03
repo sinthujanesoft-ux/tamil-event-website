@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Noto Sans Tamil', sans-serif;
-    background: linear-gradient(135deg, #ff4e50, #8b0000);
+    background: linear-gradient(to right, #1a0000, #660000);
     color: white;
     text-align: center;
 }
