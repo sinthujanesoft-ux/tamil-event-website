@@ -12,54 +12,12 @@ body {
     color: white;
 }
 
-/* NAVBAR */
-.navbar {
-    background: black;
-    padding: 15px 20px;
-}
-
-/* CONTAINER */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
 
 /* LOGO */
 .logo {
     color: gold;
 }
 
-/* NAV LINKS */
-.nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* ACTIVE */
-.nav a.active {
-    color: gold;
-}
-
-/* MENU ICON */
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-}
-
-/* ===================== */
-/* ABOUT / CONTACT CARD */
-/* ===================== */
 
 .about-section {
     padding: 80px 20px;
