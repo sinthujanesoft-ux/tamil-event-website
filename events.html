@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Events</title>
- <link rel="stylesheet" href="style.css"> 
-<link rel="stylesheet" href="events.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay-bg" onclick="toggleMenu()"></div>
 
 <!-- NAVBAR -->
 <nav class="navbar">
@@ -23,7 +27,7 @@
     <ul class="nav" id="navMenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="events.html">Events</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
 
@@ -54,22 +58,23 @@
 
 <a href="teacher-exam.html" class="event-card">
     <img src="assets/exam.jpg">
-    <div class="overlay">🧑‍🏫 அறநெறி ஆசிரியர் தேர்வு</div>
+    <div class="overlay">🧑‍🏫 ஆசிரியர் தேர்வு</div>
 </a>
 
 </div>
 
 </section>
 
-  <footer>
+<!-- FOOTER -->
+<footer>
   <p>© 2026 Sinthujan. All rights reserved.</p>
 </footer>
-
 
 <!-- JS -->
 <script>
 function toggleMenu() {
   document.getElementById("navMenu").classList.toggle("active");
+  document.getElementById("overlay").classList.toggle("active");
 }
 </script>
 
