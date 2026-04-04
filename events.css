@@ -82,8 +82,9 @@ body {
 }
 
 /* ================= EVENTS ================= */
+
 .events-section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -91,43 +92,36 @@ body {
     margin-bottom: 40px;
 }
 
-/* GRID */
 .event-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
-    max-width: 1100px;
-    margin: auto;
 }
 
-/* CARD */
 .event-card {
-    display: block;
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    border-radius: 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .event-card img {
-    display: block;
     width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
 }
 
-/* TEXT OVER IMAGE */
 .overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 15px;
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    text-align: center;
+    color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 /* HOVER */
@@ -139,23 +133,45 @@ body {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
+/* ================= CONTACT ================= */
 
-/* TEXT */
-.overlay {
-    position: absolute;
-    bottom: 0;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    text-align: center;
-    font-weight: bold;
-    color: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
 }
 
-/* HOVER */
-.event-card:hover img {
-    transform: scale(1.05);
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
+
 
 /* ================= FOOTER ================= */
 footer {
@@ -197,5 +213,18 @@ footer {
 
     .event-card img {
         height: 180px;
+    }
+
+     /* GRID FIX */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card img {
+        height: 180px;
+    }
+
+    .about-box {
+        padding: 20px;
     }
 }
