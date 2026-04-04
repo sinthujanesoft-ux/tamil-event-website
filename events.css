@@ -12,12 +12,87 @@ body {
     color: white;
 }
 
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #3b1d0a;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* LOGO */
 .logo {
     color: gold;
+    font-size: 20px;
 }
 
+/* MENU */
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* LINKS */
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: gold;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #3b1d0a, #a0522d);
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* TEXT */
+.hero-text h1 {
+    font-size: 32px;
+}
+
+.hero-text p {
+    margin-top: 10px;
+}
+
+/* IMAGE */
+.hero img {
+    width: 180px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* ================= ABOUT ================= */
 
 .about-section {
     padding: 80px 20px;
@@ -43,9 +118,7 @@ body {
     text-align: justify;
 }
 
-/* ===================== */
-/* EVENTS PAGE */
-/* ===================== */
+/* ================= EVENTS ================= */
 
 .events-section {
     padding: 80px 20px;
@@ -98,9 +171,7 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-/* ===================== */
-/* CONTACT */
-/* ===================== */
+/* ================= CONTACT ================= */
 
 .contact-grid {
     display: grid;
@@ -131,63 +202,32 @@ body {
     cursor: pointer;
 }
 
-/* NAVBAR */
-/* NAVBAR */
-.navbar {
-    background: #3b1d0a;
-    padding: 15px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* ================= FOOTER ================= */
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
 }
 
-/* CONTAINER */
-.container {
-    max-width: 1100px;
-    margin: auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* LOGO */
-.logo {
-    color: gold;
-    font-size: 20px;
-}
-
-/* MENU */
-.nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-/* LINKS */
-.nav a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.nav a:hover {
-    color: gold;
-}
-
-/* HAMBURGER */
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-/* ===================== */
-/* 📱 MOBILE */
-/* ===================== */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
+    /* HERO */
+    .hero-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 20px;
+        width: 140px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
 
     /* GRID FIX */
     .contact-grid {
@@ -202,9 +242,9 @@ body {
         padding: 20px;
     }
 
+    /* NAV MENU */
     .menu-toggle {
         display: block;
-        color: white;
     }
 
     .nav {
@@ -220,6 +260,5 @@ body {
 
     .nav.active {
         display: flex;
-    
-
+    }
 }
