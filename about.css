@@ -17,7 +17,7 @@ color: white;
 background: black;
 padding: 15px 20px;
 position: relative;
-z-index: 1000; /* FIX */
+z-index: 10000;
 }
 
 /* CONTAINER */
@@ -25,7 +25,6 @@ z-index: 1000; /* FIX */
 display: flex;
 justify-content: space-between;
 align-items: center;
-position: relative;
 }
 
 /* LOGO */
@@ -34,12 +33,11 @@ color: gold;
 font-size: 20px;
 }
 
-/* NAV MENU */
+/* NAV DESKTOP */
 .nav {
 list-style: none;
 display: flex;
 gap: 20px;
-z-index: 1001;
 }
 
 .nav a {
@@ -54,7 +52,7 @@ color: gold;
 /* MENU ICON */
 .menu-toggle {
 display: none;
-font-size: 24px;
+font-size: 26px;
 color: white;
 cursor: pointer;
 }
@@ -87,7 +85,6 @@ gap: 30px;
 /* LOGO */
 .about-logo img {
 width: 150px;
-height: auto;
 border-radius: 10px;
 }
 
@@ -124,30 +121,33 @@ margin-top: 50px;
 display: block;
 }
 
-/* HIDE MENU */
+/* RIGHT SIDE MENU */
 .nav {
-display: none;
-flex-direction: column;
-width: 100%;
+position: fixed;
+top: 0;
+right: -260px; /* hidden */
+width: 260px;
+height: 100vh;
 background: black;
-position: absolute;
-top: 60px;
-left: 0;
-padding: 10px 0;
-z-index: 9999; /* 🔥 IMPORTANT FIX */
+
+flex-direction: column;
+align-items: center;
+padding-top: 80px;
+
+transition: right 0.3s ease;
+z-index: 99999;
 }
 
-/* SHOW WHEN CLICK */
+/* SHOW MENU */
 .nav.active {
-display: flex;
+right: 0;
 }
 
 .nav li {
-text-align: center;
-padding: 10px 0;
+padding: 15px 0;
 }
 
-/* STACK LAYOUT */
+/* STACK CONTENT */
 .about-flex {
 flex-direction: column;
 text-align: center;
@@ -162,4 +162,16 @@ margin-bottom: 15px;
 padding: 20px;
 }
 
+}
+
+/* OPTIONAL OVERLAY */
+body.menu-open::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+z-index: 9998;
 }
