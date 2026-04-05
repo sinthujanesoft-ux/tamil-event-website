@@ -26,9 +26,10 @@ align-items: center;
 position: relative;
 }
 
-/* LOGO TEXT */
+/* LOGO */
 .logo {
 color: gold;
+font-size: 20px;
 }
 
 /* NAV */
@@ -47,7 +48,7 @@ text-decoration: none;
 color: gold;
 }
 
-/* MENU ICON */
+/* TOGGLE ICON */
 .menu-toggle {
 display: none;
 font-size: 24px;
@@ -55,12 +56,11 @@ color: white;
 cursor: pointer;
 }
 
-/* ABOUT SECTION */
+/* ABOUT */
 .about-section {
 padding: 80px 20px;
 }
 
-/* CARD */
 .about-box {
 max-width: 900px;
 margin: auto;
@@ -71,21 +71,17 @@ backdrop-filter: blur(6px);
 box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
-/* FLEX */
 .about-flex {
 display: flex;
 align-items: center;
 gap: 30px;
 }
 
-/* LOGO */
 .about-logo img {
 width: 150px;
-height: auto;
 border-radius: 10px;
 }
 
-/* CONTENT */
 .about-content {
 flex: 1;
 }
@@ -113,10 +109,12 @@ margin-top: 50px;
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
+/* SHOW ☰ */
 .menu-toggle {
 display: block;
 }
 
+/* HIDE MENU */
 .nav {
 display: none;
 flex-direction: column;
@@ -125,7 +123,12 @@ background: black;
 position: absolute;
 top: 60px;
 left: 0;
-padding: 15px 0;
+padding: 10px 0;
+}
+
+/* SHOW WHEN CLICK */
+.nav.active {
+display: flex;
 }
 
 .nav li {
@@ -133,10 +136,7 @@ text-align: center;
 padding: 10px 0;
 }
 
-.nav.active {
-display: flex;
-}
-
+/* STACK */
 .about-flex {
 flex-direction: column;
 text-align: center;
