@@ -4,68 +4,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>நூல் வெளியீடு</title>
+<title>தமிழ் நூல் வெளியீடு</title>
 
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="book.css">
 
 </head>
 
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <h2 class="logo">அகண்ட தமிழ் உலகம் - இலங்கை</h2>
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="events.html">Events</a></li>
-    </ul>
-  </div>
-</nav>
-
 <section class="section">
 
 <div class="center-box">
 
-<h1>தமிழ் நூல் வெளியீட்டு போட்டி</h1>
+<!-- 🔝 TOP BAR -->
+<div class="top-bar">
+  <a href="events.html" class="back-btn">⬅ Back</a>
+  <a href="bookrule.pdf" download class="rules-btn">⬇ Download</a>
+</div>
 
-<p><strong>(பல்கலைக்கழக பேராசிரியர்களுக்கான வழிகாட்டி)</strong></p>
+<h1>📚 03. தமிழ் நூல் வெளியீட்டு போட்டி</h1>
 
-<h3> போட்டியின் நோக்கம்</h3>
+<h3 class="section-title">🎯 போட்டியின் நோக்கம்</h3>
+<p>
+பாரம்பரியம், சமய விழுமியங்கள், அறநெறி போன்ற தலைப்புகளில்<br>
+திருக்குறள் சார்ந்த ஆய்வுகளை ஊக்குவித்தல்
+</p>
 
-<ul class="rules">
-<li>தமிழ் மொழி மற்றும் பண்பாட்டை மேம்படுத்துதல்</li>
-<li>“இந்து சிந்தனை”, “தமிழ்ப்பற்று”, “அறநெறி”, “சமூக விழிப்புணர்வு” போன்ற தலைப்புகளில் ஆய்வுகளை ஊக்குவித்தல்</li>
-<li>கல்வியாளர்களின் ஆய்வு நூல்களை வெளியிட ஊக்குவித்தல்</li>
+<h3 class="sub-title">👩‍🏫 பங்கேற்பாளர்கள்</h3>
+<p>
+அங்கீகரிக்கப்பட்ட பல்கலைக்கழகங்களில் பணிபுரியும்<br>
+பேராசிரியர்கள் / விரிவுரையாளர்கள்
+</p>
+
+<!-- SHORT -->
+<div id="shortContent">
+  <h3 class="sub-title">📖 நூல் விவரம்</h3>
+  <p>திருக்குறள் சார்ந்த ஆய்வு நூல்கள் சமர்ப்பிக்க வேண்டும்</p>
+</div>
+
+<!-- FULL CONTENT -->
+<div id="fullContent" style="display:none; text-align:left;">
+
+<h3 class="sub-title">📝 நூல் தலைப்புகள்</h3>
+<p>திருக்குறள், சமயம் மற்றும் இலக்கியம் சார்ந்த நூல்</p>
+
+<h3 class="sub-title">📖 நூல் வடிவமைப்பு</h3>
+<ul>
+<li>மொழி : தமிழ் மட்டும்</li>
+<li>குறைந்தபட்சம் : 100 பக்கங்கள்</li>
+<li>கால வரையறை இல்லை</li>
 </ul>
 
-<h3> பங்கேற்பாளர்கள்</h3>
-<p>தமிழில் ஆய்வு நூல்கள் எழுதிய பேராசிரியர்கள் மற்றும் ஆராய்ச்சியாளர்கள்</p>
+<h3 class="sub-title">📩 சமர்ப்பிக்கும் முறை</h3>
+<p>Printed Copy → Registered Post மூலம் அனுப்ப வேண்டும்</p>
 
-<!-- BUTTONS -->
-<div class="btn-group">
+<h3 class="sub-title">📍 முகவரி</h3>
+<p class="highlight">
+இல 33, சரவணா வீதி,<br>
+கல்லடி, மட்டக்களப்பு
+</p>
 
-<a href="bookrule.pdf" target="_blank" class="square-btn">
-விதிமுறைகள்
-</a>
+<h3 class="sub-title">📅 இறுதி தேதி</h3>
+<p class="highlight">2026.05.15</p>
 
-<a href="https://forms.gle/yourlink" target="_blank" class="square-btn register">
-Register Now
-</a>
+<h3 class="section-title">📌 முக்கிய குறிப்புகள்</h3>
+<ul>
+<li>Copy செய்யக் கூடாது</li>
+<li>ஒரு நபர் → ஒரு நூல் மட்டும்</li>
+<li>Final decision → குழு முடிவு</li>
+</ul>
 
 </div>
 
-</div>
+<!-- READ MORE -->
+<button onclick="toggleContent()" class="read-btn">Read More...</button>
 
+</div>
 </section>
 
-  <!-- JS -->
 <script>
-function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("active");
+function toggleContent() {
+  const full = document.getElementById("fullContent");
+  const btn = document.querySelector(".read-btn");
+
+  if (full.style.display === "none") {
+    full.style.display = "block";
+    btn.innerText = "Show Less";
+  } else {
+    full.style.display = "none";
+    btn.innerText = "Read More...";
+  }
 }
 </script>
-
 
 </body>
 </html>
