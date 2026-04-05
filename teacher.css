@@ -1,81 +1,97 @@
-/* SECTION */
-.section {
-    padding: 80px 20px;
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #5a0a00, #8b0000);
+    overflow-x: hidden;
 }
 
-/* CARD */
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+/* SECTION */
+.section {
+    padding: 40px 20px;
+}
+
+/* 📄 WHITE BOX */
 .center-box {
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
-    background: #e5e5e5;
-    color: #222;
-    padding: 40px 30px;
-    border-radius: 20px;
+    padding: 40px 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    color: #222;
+}
+
+/* TOP BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.back-btn {
+    background: black;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.rules-btn {
+    background: #8b0000;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 /* TITLE */
 .center-box h1 {
     font-size: 26px;
-    margin-bottom: 10px;
+    color: #111;
 }
 
-/* SUBTITLE */
-.subtitle {
-    color: #555;
-    margin-bottom: 15px;
+/* COLORS */
+.section-title {
+    color: #b22222;
 }
 
-/* HEADINGS */
-.center-box h3 {
-    color: #8b0000;
-    margin-top: 20px;
+.sub-title {
+    color: #006400;
+}
+
+.highlight {
+    color: #ff6600;
+    font-weight: bold;
 }
 
 /* LIST */
-.rules {
+.center-box ul {
     text-align: left;
     padding-left: 20px;
-    margin-top: 10px;
 }
 
-.rules li {
-    margin: 8px 0;
-    line-height: 1.5;
+.center-box li {
+    margin-bottom: 6px;
 }
 
-/* BUTTON GROUP */
-.btn-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* READ BUTTON */
+.read-btn {
     margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-/* BUTTON */
-.square-btn {
-    display: inline-block;
-    padding: 18px 25px;
+    padding: 12px;
     width: 200px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background: #8b0000;
-    transition: 0.3s;
-}
-
-/* REGISTER BUTTON */
-.register {
+    border: none;
     background: black;
-}
-
-/* HOVER */
-.square-btn:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 /* MOBILE */
@@ -85,15 +101,26 @@
         padding: 25px 15px;
     }
 
-    .btn-group {
-        flex-direction: column;
-    }
-
-    .square-btn {
-        width: 100%;
-    }
-
     .center-box h1 {
         font-size: 22px;
+    }
+
+    .center-box h3 {
+        font-size: 16px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .back-btn,
+    .rules-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .read-btn {
+        width: 100%;
     }
 }
