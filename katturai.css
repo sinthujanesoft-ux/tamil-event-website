@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 
-    /* 🔥 SAME BACKGROUND AS HOME */
+    /* 🔴 SAME BACKGROUND */
     background: linear-gradient(180deg, #5a0a00, #8b0000);
     color: white;
 }
@@ -15,24 +15,19 @@ body {
     background: transparent;
 }
 
-/* FULL SCREEN CONTAINER */
+/* 📄 WHITE DOCUMENT BOX */
 .center-box {
     width: 100%;
-    max-width: 100%;
-    padding: 40px 20px;
-    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 25px;
 
-    /* 🔥 MODERN GLASS EFFECT */
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
+    background: white;          /* 🔥 main change */
+    color: #222;
+
     border-radius: 15px;
-}
-
-/* CONTENT WIDTH CONTROL */
-.center-box > * {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    text-align: center;
 }
 
 /* TOP BAR */
@@ -55,7 +50,7 @@ body {
 
 /* RULES BUTTON */
 .rules-btn {
-    background: #ff3b3b;
+    background: #8b0000;
     color: white;
     padding: 10px 16px;
     border-radius: 8px;
@@ -67,11 +62,12 @@ body {
 .center-box h1 {
     font-size: 30px;
     margin-bottom: 15px;
+    color: #111;
 }
 
 /* SUBTITLE */
 .center-box h3 {
-    color: #ffdede;
+    color: #8b0000;
     margin-top: 20px;
 }
 
@@ -103,7 +99,7 @@ body {
     cursor: pointer;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
 .back-btn:hover,
 .rules-btn:hover,
 .read-btn:hover {
