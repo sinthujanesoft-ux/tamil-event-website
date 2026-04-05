@@ -1,26 +1,108 @@
-/* TOP RIGHT BUTTON */
-.top-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+/* SECTION */
+.section {
+    padding: 80px 20px;
 }
 
-.top-btn a {
-    background: #8b0000;
+/* CARD */
+.center-box {
+    max-width: 650px;
+    margin: auto;
+    background: #e5e5e5;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* TOP BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    background: black;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 14px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 14px;
 }
 
+/* RULES BUTTON */
+.rules-btn {
+    background: #8b0000;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* TITLE */
+.center-box h1 {
+    font-size: 28px;
+}
+
+/* SUBTITLE */
+.center-box h3 {
+    color: #8b0000;
+    margin-top: 15px;
+}
+
+/* TEXT */
+.center-box p {
+    margin: 10px 0;
+}
+
+/* LIST */
+.center-box ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
 /* READ BUTTON */
 .read-btn {
     margin-top: 25px;
-    padding: 12px 20px;
+    padding: 12px;
+    width: 200px;
     border: none;
     background: black;
     color: white;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .center-box {
+        padding: 20px 15px;
+    }
+
+    .center-box h1 {
+        font-size: 22px;
+    }
+
+    .center-box h3 {
+        font-size: 16px;
+    }
+
+    /* STACK BUTTONS */
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .back-btn,
+    .rules-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .read-btn {
+        width: 100%;
+    }
 }
