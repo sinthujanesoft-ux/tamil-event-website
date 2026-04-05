@@ -1,30 +1,46 @@
-/* SECTION */
-.section {
-    padding: 80px 20px;
+/* RESET (optional but recommended) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* CARD */
+/* SECTION */
+.section {
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* FULL SCREEN CARD */
 .center-box {
-    max-width: 650px;
-    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     background: #e5e5e5;
-    padding: 40px 30px;
-    border-radius: 20px;
+    padding: 40px 20px;
+    border-radius: 0;
     text-align: center;
+}
+
+/* 🔥 CONTENT WIDTH CONTROL (important) */
+.center-box > * {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* TOP BAR */
 .top-bar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 /* BACK BUTTON */
 .back-btn {
     background: black;
     color: white;
-    padding: 8px 14px;
+    padding: 10px 16px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 14px;
@@ -34,7 +50,7 @@
 .rules-btn {
     background: #8b0000;
     color: white;
-    padding: 8px 14px;
+    padding: 10px 16px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 14px;
@@ -42,18 +58,20 @@
 
 /* TITLE */
 .center-box h1 {
-    font-size: 28px;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 /* SUBTITLE */
 .center-box h3 {
     color: #8b0000;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 /* TEXT */
 .center-box p {
     margin: 10px 0;
+    line-height: 1.6;
 }
 
 /* LIST */
@@ -62,10 +80,14 @@
     padding-left: 20px;
 }
 
+.center-box ul li {
+    margin-bottom: 6px;
+}
+
 /* READ BUTTON */
 .read-btn {
-    margin-top: 25px;
-    padding: 12px;
+    margin-top: 30px;
+    padding: 12px 20px;
     width: 200px;
     border: none;
     background: black;
@@ -74,11 +96,18 @@
     cursor: pointer;
 }
 
-/* MOBILE */
+/* HOVER EFFECT */
+.back-btn:hover,
+.rules-btn:hover,
+.read-btn:hover {
+    opacity: 0.85;
+}
+
+/* 📱 MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     .center-box {
-        padding: 20px 15px;
+        padding: 25px 15px;
     }
 
     .center-box h1 {
@@ -97,12 +126,16 @@
 
     .back-btn,
     .rules-btn {
-        display: block;
         width: 100%;
         text-align: center;
     }
 
     .read-btn {
         width: 100%;
+    }
+
+    /* TEXT SIZE */
+    #fullContent {
+        font-size: 14px;
     }
 }
