@@ -6,67 +6,98 @@
 
 <title>அறநெறி ஆசிரியர் தேர்வு</title>
 
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="teacher.css">
 
 </head>
 
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <h2 class="logo">அகண்ட தமிழ் உலகம் - இலங்கை</h2>
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="events.html">Events</a></li>
-    </ul>
-  </div>
-</nav>
-
 <section class="section">
 
 <div class="center-box">
 
-<h1>🧑‍🏫 அறநெறி ஆசிரியர்களுக்கான எழுத்துத் தேர்வு</h1>
+<!-- 🔝 TOP BAR -->
+<div class="top-bar">
+  <a href="events.html" class="back-btn">⬅ Back</a>
+  <a href="teacherrule.pdf" download class="rules-btn">⬇ Download</a>
+</div>
 
-<p class="subtitle">வழிகாட்டி</p>
+<h1>🧑‍🏫 04. அறநெறி ஆசிரியர்களுக்கான எழுத்துத் தேர்வு</h1>
 
-<h3>🎯 தேர்வு நோக்கம்</h3>
-
-<ul class="rules">
-<li>அறநெறி (நெறி, பண்பாடு, மதிப்புகள்) தொடர்பான அறிவை மதிப்பீடு செய்தல்</li>
-<li>கற்பித்தல் திறன் மற்றும் நெறி வழிகாட்டல் திறனை பரிசோதித்தல்</li>
-<li>சமூக மற்றும் கல்வி பங்களிப்பை மதிப்பிடுதல்</li>
+<h3 class="section-title">🎯 தேர்வு நோக்கம்</h3>
+<ul>
+<li>அறநெறி தொடர்பான அறிவை மதிப்பீடு செய்தல்</li>
+<li>கற்பித்தல் திறனை பரிசோதித்தல்</li>
+<li>சமூக பங்களிப்பை மதிப்பிடுதல்</li>
 </ul>
 
-<!-- BUTTONS -->
-<div class="btn-group">
+<!-- SHORT -->
+<div id="shortContent">
+  <h3 class="sub-title">📘 தேர்வு விவரம்</h3>
+  <p>MCQ தேர்வு மூலம் ஆசிரியர்கள் மதிப்பிடப்படுவர்</p>
+</div>
 
-<a href="teacherrule.pdf" target="_blank" class="square-btn">
-விதிமுறைகள்
-</a>
+<!-- FULL CONTENT -->
+<div id="fullContent" style="display:none; text-align:left;">
 
-<a href="https://forms.gle/yourlink" target="_blank" class="square-btn register">
-Register Now
-</a>
+<h3 class="sub-title">👩‍🏫 தேர்வு தகுதி</h3>
+<ul>
+<li>அறநெறி ஆசிரியர்கள் மட்டும்</li>
+<li>ஒரு பாடசாலை → ஒரு ஆசிரியர்</li>
+<li>1 ஆண்டு அனுபவம் அவசியம்</li>
+<li>Self Registration + WhatsApp குழு</li>
+</ul>
+
+<h3 class="sub-title">📝 தேர்வு வடிவம்</h3>
+<p><strong>MCQ</strong></p>
+<ul>
+<li>40 கேள்விகள்</li>
+<li>ஒவ்வொரு கேள்வி : 2.5 மதிப்பெண்கள்</li>
+<li>மொத்தம் : 100 மதிப்பெண்கள்</li>
+</ul>
+
+<h3 class="sub-title">⏱️ தேர்வு நேரம்</h3>
+<p class="highlight">1 மணி நேரம்</p>
+
+<h3 class="sub-title">📚 கேள்வி துறை</h3>
+<ul>
+<li>சமய வழிபாடு</li>
+<li>சமய நம்பிக்கைகள்</li>
+<li>அறநெறி வாழ்வு</li>
+<li>திருக்குறள் சார்ந்த கருத்துக்கள்</li>
+</ul>
+
+<h3 class="sub-title">✒️ வழிமுறைகள்</h3>
+<ul>
+<li>நீல / கருப்பு பேனா மட்டும்</li>
+<li>விடைத்தாளில் மட்டும் பதில்</li>
+</ul>
+
+<h3 class="sub-title">📅 முடிவு திகதி</h3>
+<p class="highlight">2026.05.30</p>
 
 </div>
 
-</div>
+<!-- READ MORE -->
+<button onclick="toggleContent()" class="read-btn">Read More...</button>
 
+</div>
 </section>
 
-  <footer>
-  <p>© 2026 Sinthujan. All rights reserved.</p>
-</footer>
-  
-<!-- JS -->
 <script>
-function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("active");
+function toggleContent() {
+  const full = document.getElementById("fullContent");
+  const btn = document.querySelector(".read-btn");
+
+  if (full.style.display === "none") {
+    full.style.display = "block";
+    btn.innerText = "Show Less";
+  } else {
+    full.style.display = "none";
+    btn.innerText = "Read More...";
+  }
 }
 </script>
-
 
 </body>
 </html>
