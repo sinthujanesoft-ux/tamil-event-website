@@ -1,66 +1,92 @@
-<!DOCTYPE html>
-<html lang="ta">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>கட்டுரை போட்டி</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="katturai.css">
-
-</head>
-
-<body>
-
-<nav class="navbar">
-  <div class="container">
-    <h2 class="logo">அகண்ட தமிழ் உலகம் - இலங்கை</h2>
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="events.html">Events</a></li>
-    </ul>
-  </div>
-</nav>
-
 <section class="section">
 
 <div class="center-box">
 
-<h1>📘 போட்டி அறிவிப்பு</h1>
+<!-- 🔴 TOP RIGHT BUTTON -->
+<div class="top-btn">
+  <a href="rules.pdf" target="_blank">📄 விதிமுறைகள்</a>
+</div>
+
+<h1>📝 01. கட்டுரை போட்டி</h1>
 
 <h3>👩‍🎓 பங்கேற்பாளர்கள்</h3>
-<p>தரம் 6 முதல் உயர்தரம் (A/L) வரை மாணவர்கள்</p>
+<p>தரம் 06 முதல் உயர்தரம் (A/L) வரை பாடசாலை மாணவர்கள்</p>
 
+<!-- 🔽 SHORT VIEW -->
+<div id="shortContent">
+  <h3>📚 போட்டி பிரிவுகள்</h3>
+  <p>தரம் 6 முதல் 11 வரை – திருக்குறள் தொடர்பான தலைப்புகள்</p>
+</div>
 
-<!-- 🔥 BUTTONS -->
-<div class="btn-group">
+<!-- 🔽 FULL CONTENT -->
+<div id="fullContent" style="display:none; text-align:left;">
 
-<a href="rules.pdf" target="_blank" class="square-btn">
-விதிமுறைகள்
-</a>
+<h3>📚 போட்டி பிரிவுகள் & தலைப்புகள்</h3>
 
-<a href="https://forms.gle/yourlink" target="_blank" class="square-btn register">
-Register Now
-</a>
+<p><strong>🔹 தரம் 6 & 7</strong></p>
+<ul>
+<li>திருக்குறளில் கல்வி</li>
+<li>திருக்குறளும் அறமும்</li>
+<li>குறளின் இறைவழிபாடு</li>
+</ul>
+
+<p><strong>🔹 தரம் 8 & 9</strong></p>
+<ul>
+<li>குறளும் வைதீக நடைமுறைகளும்</li>
+<li>திருக்குறளில் அரசாட்சி</li>
+<li>திருக்குறளில் நாவாண்மை</li>
+</ul>
+
+<p><strong>🔹 தரம் 10 & 11</strong></p>
+<ul>
+<li>திருக்குறளும் மேலாண்மையும்</li>
+<li>குறளும் கீதையும்</li>
+<li>குறளும் புருஷார்த்தங்களும்</li>
+</ul>
+
+<h3>🏆 போட்டி வடிவம்</h3>
+<p>போட்டி வகை : கட்டுரை<br>மொழி : தமிழ் மட்டும்</p>
+
+<h3>📩 அனுப்பும் முறை</h3>
+<p>
+மாணவர்கள் → ஆசிரியர்கள் → அதிபர் → கோட்ட மட்டம்
+</p>
+
+<h3>📅 இறுதி திகதி</h3>
+<p>2026.05.08</p>
+
+<h3>✍️ எழுத்து வழிமுறைகள்</h3>
+<ul>
+<li>தரம் 6 – 7 : 150 சொற்கள்</li>
+<li>தரம் 8 – 9 : 200 சொற்கள்</li>
+<li>தரம் 10 – 11 : 250 சொற்கள்</li>
+</ul>
+
+<h3>📄 காகிதம்</h3>
+<ul>
+<li>A4 வெள்ளை காகிதம்</li>
+<li>Ruled / Unruled OK</li>
+</ul>
+
+<h3>✒️ எழுத்து முறை</h3>
+<ul>
+<li>ஒரு பக்கம் மட்டும்</li>
+<li>நீல / கருப்பு பேனா</li>
+<li>Pencil வேண்டாம்</li>
+</ul>
+
+<h3>📌 முக்கிய வழிமுறைகள்</h3>
+<ul>
+<li>ஒரு தலைப்பு மட்டும் தேர்வு</li>
+<li>Handwritten only</li>
+<li>Copy செய்யக் கூடாது</li>
+<li>Clean presentation அவசியம்</li>
+</ul>
 
 </div>
 
-</div>
+<!-- 🔘 READ MORE BUTTON -->
+<button onclick="toggleContent()" class="read-btn">Read More...</button>
 
+</div>
 </section>
-
-  <footer>
-  <p>© 2026 Sinthujan. All rights reserved.</p>
-</footer>
-
-  <!-- JS -->
-<script>
-function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("active");
-}
-</script>
-
-
-</body>
-</html>
