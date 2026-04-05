@@ -6,60 +6,98 @@
 
 <title>குறும்பட போட்டி</title>
 
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="shortfilm.css">
 
 </head>
 
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <h2 class="logo">அகண்ட தமிழ் உலகம் - இலங்கை</h2>
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="events.html">Events</a></li>
-    </ul>
-  </div>
-</nav>
-
 <section class="section">
 
 <div class="center-box">
 
-<h1>🎬 குறும்பட போட்டி</h1>
+<!-- 🔝 TOP BAR -->
+<div class="top-bar">
+  <a href="events.html" class="back-btn">⬅ Back</a>
+  <a href="shortflimrule.pdf" download class="rules-btn">⬇ Download</a>
+</div>
 
-<h3>👩‍🎓 பங்கேற்பாளர்கள்</h3>
-<p>அனைத்து மாணவர்களும் பங்கேற்கலாம்</p>
+<h1>🎬 02. குறும்பட போட்டி</h1>
 
-<!-- BUTTONS -->
-<div class="btn-group">
+<h3 class="section-title">👥 பங்கேற்பாளர்கள்</h3>
+<p>
+உயர்தரம் (A/L) மற்றும் பல்கலைக்கழக மாணவர்கள் பங்கேற்கலாம்<br>
+குழுவாக (Team – 5 முதல் 7 பேர் வரை) பங்கேற்கலாம்
+</p>
 
-<a href="shortflimrule.pdf" target="_blank" class="square-btn">
-விதிமுறைகள்
-</a>
+<!-- SHORT -->
+<div id="shortContent">
+  <h3 class="sub-title">🎥 போட்டி விவரம்</h3>
+  <p>3 நிமிட குறும்படம் உருவாக்கி சமர்ப்பிக்க வேண்டும்</p>
+</div>
 
-<a href="https://forms.gle/yourlink" target="_blank" class="square-btn register">
-Register Now
-</a>
+<!-- FULL CONTENT -->
+<div id="fullContent" style="display:none; text-align:left;">
+
+<h3 class="section-title">📝 தலைப்புகள்</h3>
+<ul>
+<li>வள்ளுவம் கூறும்: “முற்பகல் செய்யின் பிற்பகல் விளையும்”</li>
+<li>“முப்பால் ஒழுகி இறையடி சேர்வர்”</li>
+<li>“வாய்மையோடு இனியவை கூறல்”</li>
+</ul>
+
+<h3 class="sub-title">⏱️ கால அளவு</h3>
+<p class="highlight">3 நிமிடங்கள்</p>
+
+<h3 class="sub-title">🗣️ மொழி</h3>
+<p>தமிழ் வசனம் அவசியம்</p>
+
+<h3 class="sub-title">🎥 தொழில்நுட்ப விதிமுறைகள்</h3>
+<ul>
+<li>Video Format : MP4</li>
+<li>Resolution : 1920 × 1080 (HD) அல்லது அதற்கு மேல்</li>
+<li>படம் மற்றும் ஒலி தெளிவாக இருக்க வேண்டும்</li>
+<li>Mobile அல்லது Camera பயன்படுத்தலாம்</li>
+<li>Video Ratio : 16:9</li>
+<li>AI பயன்படுத்திய காட்சிகள் அனுமதி இல்லை</li>
+</ul>
+
+<h3 class="sub-title">🌍 சிறப்பு குறிப்புகள்</h3>
+<ul>
+<li>சிறந்த வீடியோக்கள் சமூக வலைத்தளங்களில் வெளியிடப்படும்</li>
+<li>Like அதிகம் பெறும் வீடியோக்களுக்கு கூடுதல் புள்ளிகள்</li>
+<li>Positive Message அவசியம்</li>
+<li>Original Work மட்டும் இருக்க வேண்டும்</li>
+</ul>
+
+<h3 class="sub-title">📩 சமர்ப்பிப்பு முறை</h3>
+<p>Email மூலம் அனுப்ப வேண்டும்</p>
+
+<h3 class="sub-title">📅 இறுதி திகதி</h3>
+<p class="highlight">2026.05.20</p>
 
 </div>
 
-</div>
+<!-- READ MORE -->
+<button onclick="toggleContent()" class="read-btn">Read More...</button>
 
+</div>
 </section>
 
-  <footer>
-  <p>© 2026 Sinthujan. All rights reserved.</p>
-</footer>
-
-  <!-- JS -->
 <script>
-function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("active");
+function toggleContent() {
+  const full = document.getElementById("fullContent");
+  const btn = document.querySelector(".read-btn");
+
+  if (full.style.display === "none") {
+    full.style.display = "block";
+    btn.innerText = "Show Less";
+  } else {
+    full.style.display = "none";
+    btn.innerText = "Read More...";
+  }
 }
 </script>
-
 
 </body>
 </html>
