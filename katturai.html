@@ -1,10 +1,26 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>கட்டுரை போட்டி</title>
+
+<link rel="stylesheet" href="katturai.css">
+
+</head>
+
+<body>
+
 <section class="section">
 
 <div class="center-box">
 
-<!-- 🔴 TOP RIGHT BUTTON -->
-<div class="top-btn">
-  <a href="rules.pdf" target="_blank">📄 விதிமுறைகள்</a>
+<!-- 🔙 BACK BUTTON -->
+<div class="top-bar">
+  <a href="events.html" class="back-btn">⬅ Back</a>
+
+  <a href="rules.pdf" target="_blank" class="rules-btn">📄 விதிமுறைகள்</a>
 </div>
 
 <h1>📝 01. கட்டுரை போட்டி</h1>
@@ -12,13 +28,13 @@
 <h3>👩‍🎓 பங்கேற்பாளர்கள்</h3>
 <p>தரம் 06 முதல் உயர்தரம் (A/L) வரை பாடசாலை மாணவர்கள்</p>
 
-<!-- 🔽 SHORT VIEW -->
+<!-- SHORT -->
 <div id="shortContent">
   <h3>📚 போட்டி பிரிவுகள்</h3>
-  <p>தரம் 6 முதல் 11 வரை – திருக்குறள் தொடர்பான தலைப்புகள்</p>
+  <p>தரம் 6 – 11 : திருக்குறள் தலைப்புகள்</p>
 </div>
 
-<!-- 🔽 FULL CONTENT -->
+<!-- FULL -->
 <div id="fullContent" style="display:none; text-align:left;">
 
 <h3>📚 போட்டி பிரிவுகள் & தலைப்புகள்</h3>
@@ -65,7 +81,7 @@
 <h3>📄 காகிதம்</h3>
 <ul>
 <li>A4 வெள்ளை காகிதம்</li>
-<li>Ruled / Unruled OK</li>
+<li>Ruled / Unruled</li>
 </ul>
 
 <h3>✒️ எழுத்து முறை</h3>
@@ -75,7 +91,7 @@
 <li>Pencil வேண்டாம்</li>
 </ul>
 
-<h3>📌 முக்கிய வழிமுறைகள்</h3>
+<h3>📌 வழிமுறைகள்</h3>
 <ul>
 <li>ஒரு தலைப்பு மட்டும் தேர்வு</li>
 <li>Handwritten only</li>
@@ -85,8 +101,26 @@
 
 </div>
 
-<!-- 🔘 READ MORE BUTTON -->
+<!-- BUTTON -->
 <button onclick="toggleContent()" class="read-btn">Read More...</button>
 
 </div>
 </section>
+
+<script>
+function toggleContent() {
+  const full = document.getElementById("fullContent");
+  const btn = document.querySelector(".read-btn");
+
+  if (full.style.display === "none") {
+    full.style.display = "block";
+    btn.innerText = "Show Less";
+  } else {
+    full.style.display = "none";
+    btn.innerText = "Read More...";
+  }
+}
+</script>
+
+</body>
+</html>
