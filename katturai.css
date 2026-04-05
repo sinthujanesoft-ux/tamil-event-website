@@ -1,23 +1,32 @@
-/* BODY */
+/* RESET */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+
+    /* 🔴 SAME BACKGROUND */
     background: linear-gradient(180deg, #5a0a00, #8b0000);
+    color: white;
 }
 
 /* SECTION */
 .section {
-    padding: 50px 20px;
+    padding: 40px 20px;
+    width: 100%;
+    background: transparent;
 }
 
-/* WHITE BOX */
+/* 📄 WHITE DOCUMENT BOX */
 .center-box {
-    max-width: 900px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
     padding: 40px 25px;
-    background: white;
+
+    background: white;          /* 🔥 main change */
+    color: #222;
+
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     text-align: center;
 }
 
@@ -25,48 +34,46 @@ body {
 .top-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-/* BUTTONS */
+/* BACK BUTTON */
 .back-btn {
     background: black;
     color: white;
     padding: 10px 16px;
     border-radius: 8px;
     text-decoration: none;
+    font-size: 14px;
 }
 
-.download-btn {
-    background: #ff3b3b;
+/* RULES BUTTON */
+.rules-btn {
+    background: #8b0000;
     color: white;
     padding: 10px 16px;
     border-radius: 8px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 /* TITLE */
 .center-box h1 {
     font-size: 30px;
+    margin-bottom: 15px;
     color: #111;
 }
 
-/* COLOR VARIATIONS */
-.section-title {
-    color: #b22222;
-}
-
-.sub-title {
-    color: #006400;
-}
-
-.highlight {
-    color: #ff6600;
+/* SUBTITLE */
+.center-box h3 {
+    color: #8b0000;
+    margin-top: 20px;
 }
 
 /* TEXT */
 .center-box p {
-    color: #333;
+    margin: 10px 0;
     line-height: 1.6;
 }
 
@@ -76,8 +83,7 @@ body {
     padding-left: 20px;
 }
 
-.center-box li {
-    color: #444;
+.center-box ul li {
     margin-bottom: 6px;
 }
 
@@ -95,12 +101,12 @@ body {
 
 /* HOVER */
 .back-btn:hover,
-.download-btn:hover,
+.rules-btn:hover,
 .read-btn:hover {
     opacity: 0.85;
 }
 
-/* MOBILE */
+/* 📱 MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     .center-box {
@@ -111,18 +117,28 @@ body {
         font-size: 22px;
     }
 
+    .center-box h3 {
+        font-size: 16px;
+    }
+
+    /* STACK BUTTONS */
     .top-bar {
         flex-direction: column;
         gap: 10px;
     }
 
     .back-btn,
-    .download-btn {
+    .rules-btn {
         width: 100%;
         text-align: center;
     }
 
     .read-btn {
         width: 100%;
+    }
+
+    /* TEXT SIZE */
+    #fullContent {
+        font-size: 14px;
     }
 }
