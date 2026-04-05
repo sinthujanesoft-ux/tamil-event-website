@@ -6,7 +6,7 @@
 
 <title>About</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="about.css">
 
 </head>
 
@@ -14,49 +14,62 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="container">
+<div class="container">
 
-    <h2 class="logo">அகண்ட தமிழ் உலகம் - இலங்கை</h2>
+<h2 class="logo">அகண்ட தமிழ் உலகம் - இலங்கை</h2>
 
-    <!-- ☰ MENU -->
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <ul class="nav" id="navMenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+<ul class="nav" id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 
-  </div>
+</div>
 </nav>
 
 <!-- ABOUT SECTION -->
 <section class="about-section">
 
-<div class="about-box">
+<div class="about-box about-flex">
 
-<h2>அகண்ட தமிழ் உலகம் - மட்டக்களப்பு</h2>
+<!-- LEFT LOGO -->
+<div class="about-logo">
+<img src="logo.png" alt="AKHTU Logo">
+</div>
+
+<!-- RIGHT CONTENT -->
+<div class="about-content">
+
+<h2>அறிமுகம்</h2>
 
 <p>
-அறம் உரைக்கும் தெய்வப் புலவர் திருவள்ளுவர் அருளிய திருக்குறளினைப் போற்றும் திருக்குறள் மாநாடு மட்டக்களப்பு 
-மண்ணிலே விமர்சையாக இடம்பெற உள்ளது. இதனையொட்டி மாணவச் சமூகம் பயன்பெற கட்டுரைப் போட்டி நடைபெற உள்ளது. 
-எமது வாழ்வியல் நெறியினை வளமூட்டும் வள்ளுவத்தினை உணர்ந்தொழுக இவ்வரிய வாய்ப்பினை 
-மாணவச் செல்வங்கள் பயன்படுத்திக் கொள்ள வேண்டுகின்றோம்.
+அகண்ட தமிழ் உலகம் (AKHTU) உலகம் முழுவதும் வாழும் தமிழர்களை ஒன்றிணைத்து 
+முன்னேற்றம் பெறச் செய்கின்ற ஒரு சர்வதேச இலாப நோக்கமற்ற அமைப்பாகும்.
+தமிழ் மொழி, பாரம்பரியம் மற்றும் பண்பாட்டை பாதுகாத்து, கல்வி, சுகாதாரம் 
+மற்றும் பொருளாதார வளர்ச்சிக்கு வழிகாட்டுவது எங்கள் நோக்கம்.
+</p>
+
+<p>
+உலகின் பல நாடுகளில் வாழும் தமிழர்களை இணைத்து, அவர்களின் அடையாளத்தையும் 
+ஒற்றுமையையும் வலுப்படுத்துவதற்காக AKHTU செயல்படுகிறது.
 </p>
 
 </div>
 
+</div>
+
 </section>
-  
+
 <footer>
-  <p>© 2026 Sinthujan. All rights reserved.</p>
+<p>© 2026 Sinthujan. All rights reserved.</p>
 </footer>
 
-<!-- JS -->
 <script>
 function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("active");
+document.getElementById("navMenu").classList.toggle("active");
 }
 </script>
 
