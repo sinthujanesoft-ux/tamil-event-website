@@ -16,6 +16,8 @@ color: white;
 .navbar {
 background: black;
 padding: 15px 20px;
+position: relative;
+z-index: 1000; /* FIX */
 }
 
 /* CONTAINER */
@@ -32,11 +34,12 @@ color: gold;
 font-size: 20px;
 }
 
-/* NAV */
+/* NAV MENU */
 .nav {
 list-style: none;
 display: flex;
 gap: 20px;
+z-index: 1001;
 }
 
 .nav a {
@@ -48,7 +51,7 @@ text-decoration: none;
 color: gold;
 }
 
-/* TOGGLE ICON */
+/* MENU ICON */
 .menu-toggle {
 display: none;
 font-size: 24px;
@@ -56,11 +59,12 @@ color: white;
 cursor: pointer;
 }
 
-/* ABOUT */
+/* ABOUT SECTION */
 .about-section {
 padding: 80px 20px;
 }
 
+/* CARD */
 .about-box {
 max-width: 900px;
 margin: auto;
@@ -69,19 +73,25 @@ padding: 30px;
 border-radius: 20px;
 backdrop-filter: blur(6px);
 box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+position: relative;
+z-index: 1;
 }
 
+/* FLEX */
 .about-flex {
 display: flex;
 align-items: center;
 gap: 30px;
 }
 
+/* LOGO */
 .about-logo img {
 width: 150px;
+height: auto;
 border-radius: 10px;
 }
 
+/* CONTENT */
 .about-content {
 flex: 1;
 }
@@ -124,6 +134,7 @@ position: absolute;
 top: 60px;
 left: 0;
 padding: 10px 0;
+z-index: 9999; /* 🔥 IMPORTANT FIX */
 }
 
 /* SHOW WHEN CLICK */
@@ -136,7 +147,7 @@ text-align: center;
 padding: 10px 0;
 }
 
-/* STACK */
+/* STACK LAYOUT */
 .about-flex {
 flex-direction: column;
 text-align: center;
