@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+</head>
+
+<body style="background:black; color:white; text-align:center;">
+
+  <h1>Gallery</h1>
+  <div id="gallery"></div>
+
+  <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDzrS8sC2dVxhl9M8aF0q64AD1CgtxU67A",
+      authDomain: "tamil-event-website-af580.firebaseapp.com",
+      projectId: "tamil-event-website-af580",
+      storageBucket: "tamil-event-website-af580.firebasestorage.app",
+      messagingSenderId: "375738644796",
+      appId: "1:375738644796:web:2831534b15dc0c63490639"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const galleryDiv = document.getElementById("gallery");
+
+    async function loadImages() {
+      const querySnapshot = await getDocs(collection(db, "gallery"));
+
+      querySnapshot.forEach(doc => {
+        const img = document.createElement("img");
+        img.src = doc.data().imageUrl;
+        img.style.width = "200px";
+        img.style.margin = "10px";
+        galleryDiv.appendChild(img);
+      });
+    }
+
+    loadImages();
+
+  </script>
+
+</body>
+</html>
