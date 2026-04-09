@@ -1,0 +1,44 @@
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getStorage, ref, uploadBytes, getDownloadURL } 
+from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+import { getFirestore, addDoc, collection } 
+from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDzrS8sC2dVxhl9M8aF0q64AD1CgtxU67A",
+  authDomain: "tamil-event-website-af580.firebaseapp.com",
+  projectId: "tamil-event-website-af580",
+  storageBucket: "tamil-event-website-af580.firebasestorage.app",
+  appId: "1:375738644796:web:2831534b15dc0c63490639"
+};
+
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
+const db = getFirestore(app);
+
+window.uploadImage = async function () {
+
+const file = document.getElementById("file").files[0];
+
+if(!file){
+alert("Select file!");
+return;
+}
+
+const storageRef = ref(storage, 'images/' + file.name);
+
+await uploadBytes(storageRef, file);
+
+const url = await getDownloadURL(storageRef);
+
+await addDoc(collection(db, "gallery"), {
+imageUrl: url
+});
+
+alert("Uploaded!");
+
+}
+
+</script>
