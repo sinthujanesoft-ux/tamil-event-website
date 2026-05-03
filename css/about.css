@@ -1,62 +1,77 @@
-/* NAVBAR */
-.navbar {
-  background: black;
-  padding: 15px 20px;
+/* SECTION */
+.about-section {
+  padding: 60px 20px;
 }
 
-.container {
-  max-width: 1100px;
+/* SCROLL STYLE */
+.scroll-container {
+  max-width: 900px;
   margin: auto;
+  padding: 30px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: rgba(255, 248, 220, 0.95);
+  border: 10px solid #8b5a2b;
+  border-radius: 20px;
+
+  color: black;
+  line-height: 1.8;
+  text-align: justify;
+
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
 }
 
-.logo {
-  color: gold;
-  font-size: 20px;
+/* HEADINGS */
+.scroll-container h1 {
+  text-align: center;
+  color: #8b0000;
+  margin-bottom: 10px;
 }
 
-/* MENU */
-.nav {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.scroll-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.nav a {
-  text-decoration: none;
-  color: white;
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
 }
 
-.nav a:hover,
-.nav a.active {
-  color: gold;
+/* PARAGRAPH */
+.scroll-container p {
+  margin-bottom: 15px;
 }
 
-/* MOBILE MENU */
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  color: white;
-  cursor: pointer;
+/* LIST */
+.scroll-container ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
+.scroll-container li {
+  margin-bottom: 6px;
+}
+
+/* SECTION HEADINGS */
+.scroll-container h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #8b0000;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+
+  .scroll-container {
+    padding: 20px;
   }
 
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: black;
-    text-align: center;
-    padding: 10px 0;
+  .scroll-container h1 {
+    font-size: 20px;
   }
 
-  .nav.active {
-    display: flex;
+  .scroll-container h2 {
+    font-size: 16px;
   }
 }
